@@ -1,7 +1,8 @@
 # Description
 
 Creative minifier does minification of .js, .html/.htm and .css files in creative folder with [uglify-js](https://www.npmjs.com/package/uglify-js), [html-minifier](https://www.npmjs.com/package/html-minifier) and [clean-css](https://www.npmjs.com/package/clean-css). 
-It also can replace links in html files in `<script>` and `<link>` tags to minified versions so minified html (for example `index.min.html`) will use minified versions of scripts and styles (for example `creative.min.js` and `styles.min.css`).
+It also can replace links in **minified** html files in `<script>` and `<link>` tags to minified versions so minified html (for example `index.min.html`) will use minified versions of scripts and styles (for example `creative.min.js` and `styles.min.css`).
+Utility doesn't change original files in creative.
 
 # Usage
 
