@@ -31,7 +31,6 @@ const isRelativeURL = (url) => {
 
 const needMinificationRegExp = new RegExp('(?<!\.min)\.(js|css|html|htm)$');
 const isMinificationNeeded = (url) => {
-	console.log(url, needMinificationRegExp.test(url));
 	return needMinificationRegExp.test(url);
 };
 
