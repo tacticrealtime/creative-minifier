@@ -30,7 +30,7 @@ const isRelativeURL = (url) => {
 };
 
 const needMinificationRegExp = new RegExp('(\.min)\.(js|css|html|htm)$');
-const isMinificationNeeded = (url) => {
+const isMinificationNotNeeded = (url) => {
 	return needMinificationRegExp.test(url);
 };
 
@@ -42,7 +42,7 @@ const minPath = (filepath) => {
 
 const makeRelativeAttr = (node, attr) => {
 	const old_src = node.attr(attr);
-	if (old_src && isRelativeURL(old_src) && isMinificationNeeded(old_src)) {
+	if (old_src && isRelativeURL(old_src) && !isMinificationNotNeeded(old_src)) {
 		const new_src = minPath(old_src);
 		node.attr(attr, new_src);
 		console.log('Replaced URL: ' + old_src + ' to ' + new_src);
