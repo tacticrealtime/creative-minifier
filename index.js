@@ -29,7 +29,7 @@ const isRelativeURL = (url) => {
 	return !absoluteURLRegExp.test(url);
 };
 
-const needMinificationRegExp = new RegExp('(?<!\.min)\.(js|css|html|htm)$');
+const needMinificationRegExp = new RegExp('(\.min)\.(js|css|html|htm)$');
 const isMinificationNeeded = (url) => {
 	return needMinificationRegExp.test(url);
 };
