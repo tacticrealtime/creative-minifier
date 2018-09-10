@@ -66,6 +66,7 @@ const minifyHTML = (rawCode, replaceLinks = false) => {
 
 	return MinifyHTML.minify(rawCode, {
 		minifyCSS: true,
+		minifyJS: true,
 		removeAttributeQuotes: true,
 		removeComments: true,
 		collapseWhitespace: true
