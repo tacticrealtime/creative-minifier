@@ -94,7 +94,7 @@ const minifyFunction = {
 
 const minifyCreative = (globs, replaceLinks = false, test = false) => {
 
-	const defaultGlobs = ['**/*.js', '**/*.html', '**/*.css', '!**/*.min.js', '!**/*.min.html', '!**/*.min.css', '!**/node_modules', '!**/fallback.html'];
+	const defaultGlobs = ['**/*.js', '**/*.html', '**/*.css', '!**/*.min.js', '!**/*.min.html', '!**/*.min.css', '!**/node_modules', '!**/fallback.html', '!**/preview.html'];
 
 	globby(defaultGlobs.concat(globs)).then(files => {
 		if (test) {
