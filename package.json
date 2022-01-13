@@ -1,6 +1,6 @@
 {
   "name": "creative-minifier",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Utility for minifiying html, css and js files in creative",
   "bin": "index.js",
   "main": "index.js",
@@ -8,7 +8,6 @@
   "license": "GPL-3.0-or-later",
   "repository": "github:tacticrealtime/creative-minifier",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.3",
     "clean-css": "^4.2.3",
     "commander": "^2.20.3",
     "fs-extra": "^5.0.0",
