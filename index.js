@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 
+(async () => {
 const program = require('commander');
 
 const addGlob = (value, globs) => {
@@ -20,7 +21,7 @@ const path = require('path');
 const UglifyJS = require('uglify-js');
 const MinifyHTML = require('html-minifier');
 const CleanCSS = require('clean-css');
-const globby = require('globby');
+const { globby } = await import('globby');
 const cleanCSS = new CleanCSS({});
 const cheerio = require('cheerio');
 
@@ -119,3 +120,5 @@ const minifyCreative = (globs, replaceLinks = false, test = false) => {
 };
 
 minifyCreative(program.globs, program.replaceLinks, program.test);
+
+})();

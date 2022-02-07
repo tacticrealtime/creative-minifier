@@ -13,6 +13,7 @@
     "fs-extra": "^5.0.0",
     "globby": "^12.0.2",
     "html-minifier": "^3.5.21",
-    "uglify-js": "^3.11.2"
+    "uglify-js": "^3.11.2",
+    "cheerio": "^1.0.0-rc.10"
   }
 }
