@@ -1,6 +1,6 @@
 {
   "name": "creative-minifier",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Utility for minifiying html, css and js files in creative",
   "bin": "index.js",
   "main": "index.js",
